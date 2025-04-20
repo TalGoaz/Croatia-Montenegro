@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+    background-image: url("CroatiaMontenegro/Montenegro/background.jpg");
+    background-repeat: repeat;
+    background-size: 100%; /* or '100% auto' if you want it to fit width */
+    background-attachment: scroll; /* allows it to scroll with the page */
+    background-position: center;
+    font-family: 'Georgia', serif;
+    color: #5c573e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+	
+	
+}
+
+/* Header Styles */
+h1 {
+    font-size: 3.5rem;
+    color: #5c573e;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2rem;
+    width: 85%;
+    margin: 20px auto;
+    line-height: 1.8;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+/* Image Styling */
+img {
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.07);
+}
+
+/* Image Gallery Container */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.8rem;
+    color: #5c573e;
+    margin-top: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Link Styling */
+a {
+    display: inline-block;
+    margin: 40px auto;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #5c573e, #fffef2);
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    transition: background 0.3s ease-in-out;
+}
+
+a:hover {
+    background: #5c573e;
+}
