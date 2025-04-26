@@ -1,63 +1,63 @@
 /* General Styles */
 body {
-    background-image: url("CroatiaMontenegro/Montenegro/background.jpg");
-    background-repeat: repeat;
-    background-size: 100%; /* or '100% auto' if you want it to fit width */
-    background-attachment: scroll; /* allows it to scroll with the page */
-    background-position: center;
-    font-family: 'Georgia', serif;
+    background-color: #f9f6f2;
+    background-image: 
+        radial-gradient(circle at 100% 150%, #f9f6f2 24%, #f0ebe4 25%, #f0ebe4 28%, #f9f6f2 29%, #f9f6f2 36%, #f0ebe4 36%, #f0ebe4 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%, #f9f6f2 24%, #f0ebe4 25%, #f0ebe4 28%, #f9f6f2 29%, #f9f6f2 36%, #f0ebe4 36%, #f0ebe4 40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, #f0ebe4 10%, #f9f6f2 11%, #f9f6f2 23%, #f0ebe4 24%, #f0ebe4 30%, #f9f6f2 31%, #f9f6f2 43%, #f0ebe4 44%, #f0ebe4 50%, #f9f6f2 51%, #f9f6f2 63%, #f0ebe4 64%, #f0ebe4 71%, transparent 71%, transparent),
+        radial-gradient(circle at 100% 50%, #f0ebe4 5%, #f9f6f2 6%, #f9f6f2 15%, #f0ebe4 16%, #f0ebe4 20%, #f9f6f2 21%, #f9f6f2 30%, #f0ebe4 31%, #f0ebe4 35%, #f9f6f2 36%, #f9f6f2 45%, #f0ebe4 46%, #f0ebe4 49%, transparent 50%, transparent),
+        radial-gradient(circle at 0 50%, #f0ebe4 5%, #f9f6f2 6%, #f9f6f2 15%, #f0ebe4 16%, #f0ebe4 20%, #f9f6f2 21%, #f9f6f2 30%, #f0ebe4 31%, #f0ebe4 35%, #f9f6f2 36%, #f9f6f2 45%, #f0ebe4 46%, #f0ebe4 49%, transparent 50%, transparent);
+    background-size: 100px 50px;
+    background-attachment: fixed;
+    font-family: 'Libre Baskerville', serif;
     color: #5c573e;
     text-align: center;
     margin: 0;
     padding: 0;
     line-height: 1.8;
-	
-	
 }
 
 /* Header Styles */
 h1 {
-    font-size: 3.5rem;
-    color: #5c573e;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    font-size: 4rem;
+    color: #4a4539;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.2;
 }
 
 /* Paragraph Styles */
 p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     width: 85%;
     margin: 20px auto;
-    line-height: 1.8;
-    background: rgba(255, 255, 255, 0.85);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    line-height: 1.9;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    font-family: 'Lora', serif;
     font-style: italic;
+    backdrop-filter: blur(5px);
+    color: #4a4539;
 }
 
 /* Image Styling */
 img {
     width: 250px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 20px;
     margin: 10px;
-    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
-    transition: transform 0.4s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 }
 
 img:hover {
     transform: scale(1.07);
-}
-
-/* Image Gallery Container */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 40px;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* List Styling */
@@ -67,26 +67,206 @@ ul {
 }
 
 li {
-    font-size: 1.8rem;
-    color: #5c573e;
-    margin-top: 40px;
-    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #4a4539;
+    margin-top: 50px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /* Link Styling */
 a {
     display: inline-block;
     margin: 40px auto;
-    padding: 12px 24px;
-    background: linear-gradient(135deg, #5c573e, #fffef2);
+    padding: 14px 32px;
+    background: linear-gradient(135deg, #5c573e 0%, #7a725c 100%);
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border-radius: 30px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-    transition: background 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 0.5px;
+}
+
+/* Remove background for image links */
+.image-container a {
+    background: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border-radius: 0;
+    display: inline-block;
+}
+
+.image-container a:hover {
+    background: none;
 }
 
 a:hover {
-    background: #5c573e;
+    background: linear-gradient(135deg, #7a725c 0%, #5c573e 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Image gallery styles */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+    background: none;
+}
+
+.image-container img:hover {
+    transform: scale(1.3);
+}
+
+/* Custom Lightbox2 styles */
+:root {
+    --lightbox-resize-duration: 200ms;
+    --lightbox-fade-duration: 300ms;
+}
+
+/* Lightbox configuration */
+.lb-container {
+    padding: 4px;
+}
+
+.lb-loader {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+
+.lb-cancel {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.lb-data {
+    padding: 0 4px;
+    color: #ccc;
+}
+
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+
+.lb-data .lb-caption {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.lb-data .lb-number {
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.lb-data .lb-close {
+    display: block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    text-align: right;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Navigation styles */
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.lb-nav a {
+    outline: none;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: none !important;
+}
+
+.lb-prev, .lb-next {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 49% !important;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background: none !important;
+}
+
+.lb-nav a.lb-prev {
+    left: 0;
+    background: url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/images/prev.png) left 48% no-repeat !important;
+}
+
+.lb-nav a.lb-next {
+    right: 0;
+    background: url(https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/images/next.png) right 48% no-repeat !important;
+}
+
+.lb-nav a.lb-prev:hover,
+.lb-nav a.lb-next:hover {
+    opacity: 1;
+}
+
+/* Additional styles to ensure no background shows */
+.lb-container {
+    background: none !important;
+}
+
+.lb-outerContainer {
+    background: none !important;
+}
+
+/* Show arrows by default on mobile */
+@media (max-width: 768px) {
+    .lb-prev, .lb-next {
+        opacity: 1;
+    }
+}
+
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
