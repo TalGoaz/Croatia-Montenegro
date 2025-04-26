@@ -18,7 +18,7 @@
 		</a>
 	</div>
 	
-	<p>In 2019, I had the unforgettable opportunity to travel through the stunning coastlines of Croatia and the serene landscapes of Montangero. 
+	<p>In 2019, I had the unforgettable opportunity to travel through the stunning <a href="#dubrovnik">coastlines of Croatia</a> and the <a href="#starigard-kotor">serene landscapes of Montangero</a>. 
 		<br>Croatia dazzled me with its crystal-clear Adriatic waters, charming stone towns like Dubrovnik and Split, and the vibrant energy of summer festivals and seaside cafés.
 		<br>The warmth of the people and the rich cultural history made every stop feel like a storybook come to life.
 		<br>After soaking up the sun and sea, Montangero offered a perfect contrast, peaceful, green, and tucked away from the bustle, it was a place to slow down and breathe deeply.</br>
@@ -27,7 +27,7 @@
 	</p>
 
 	<ul>
-		<li><b>Dubrovnik</b></li>
+		<li id="dubrovnik"><b>Dubrovnik</b></li>
 		<div class="image-container">
 			<a href="croatiamontenegro-HQ/croatia/1.jpg" data-lightbox="croatia-gallery" data-title="Dubrovnik">
 				<img src="croatiamontenegro/croatia/1.jpg" alt="Dubrovnik"/>
@@ -187,7 +187,7 @@
 		
 		</p>
 		
-		<li><b>Starigard Kotor</b></li>
+		<li id="starigard-kotor"><b>Starigard Kotor</b></li>	
 		<div class="image-container">
 			<a href="croatiamontenegro-HQ/montenegro/8.jpg" data-lightbox="montenegro-gallery" data-title="Starigard Kotor">
 				<img src="croatiamontenegro/montenegro/8.jpg" alt="Starigard Kotor"/>
@@ -303,6 +303,25 @@
 	<!-- Add jQuery and Lightbox2 JS -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js" integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- Back to Top Button -->
+	<button id="back-to-top" title="Back to Top">↑</button>
+
+	<script>
+		// Back to Top Button functionality
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 100) {
+				$('#back-to-top').fadeIn(50);
+			} else {
+				$('#back-to-top').fadeOut(50);
+			}
+		});
+
+		$('#back-to-top').click(function() {
+			$('html, body').animate({scrollTop : 0}, 200);
+			return false;
+		});
+	</script>
 </body>
 
 </html>

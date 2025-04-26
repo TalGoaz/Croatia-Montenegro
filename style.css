@@ -1,4 +1,8 @@
 /* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f9f6f2;
     background-image: 
@@ -45,6 +49,26 @@ p {
     color: #4a4539;
 }
 
+/* Paragraph Link Styles */
+p a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: #7a725c;
+    text-decoration: underline;
+    font-weight: 500;
+    box-shadow: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #5c573e;
+    background: none;
+    transform: none;
+    box-shadow: none;
+}
+
 /* Image Styling */
 img {
     width: 250px;
@@ -73,6 +97,7 @@ li {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
     letter-spacing: 1px;
+    scroll-margin-top: 2rem;
 }
 
 /* Link Styling */
@@ -118,6 +143,7 @@ a:hover {
     gap: 10px;
     margin: 10px 0;
     justify-content: center;
+    scroll-margin-top: 2rem;
 }
 
 .image-container img {
@@ -269,4 +295,33 @@ a:hover {
     width: 100%;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5c573e 0%, #7a725c 100%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.1s ease;
+    z-index: 1000;
+    opacity: 0.9;
+}
+
+#back-to-top:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    opacity: 1;
+    background: linear-gradient(135deg, #7a725c 0%, #5c573e 100%);
 }
